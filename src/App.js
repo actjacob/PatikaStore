@@ -1,5 +1,11 @@
 import React from 'react';
-import {SafeAreaView, View, Text, FlatList, StyleSheet} from 'react-native';
+import {
+  SafeAreaView,
+  TextInput,
+  Text,
+  FlatList,
+  StyleSheet,
+} from 'react-native';
 import storeData from './constants/patika_store_data.json';
 
 import ProductCard from './components/ProductCard';
@@ -8,7 +14,7 @@ const App = () => {
   return (
     <SafeAreaView style={styles.container}>
       <Text style={styles.headerText}>PATIKASTORE</Text>
-
+      <TextInput style={styles.input} />
       <FlatList
         numColumns={2}
         data={storeData}
@@ -27,6 +33,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'purple',
     fontSize: 40,
+  },
+  input: {
+    backgroundColor: '#eceff1',
+    marginHorizontal: 5,
+    borderRadius: 5,
   },
 });
 export default App;

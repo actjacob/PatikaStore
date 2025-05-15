@@ -2,29 +2,35 @@ import {StyleSheet, Dimensions} from 'react-native';
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
-console.log(windowWidth);
-console.log(windowHeight);
+console.log('Width: ', windowWidth);
+console.log('Height: ', windowHeight);
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'blue',
   },
   cardContainer: {
-    margin: 10,
+    padding: 5,
+    margin: 5,
     backgroundColor: '#eceff1',
-    width: windowWidth * 0.5,
+    borderRadius: 10,
   },
   imageContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
     padding: 5,
   },
   image: {
-    height: windowHeight * 0.33,
-    width: 195,
-    resizeMode: 'contain',
+    height: 220,
+    width: 175,
+    borderRadius: 10,
+    resizeMode: 'stretch',
   },
-  innerContainer: {},
+  innerContainer: {
+    padding: 5,
+  },
   title: {
     fontWeight: 'bold',
+    fontSize: 10,
   },
   price: {},
   inStock: {},
