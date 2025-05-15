@@ -18,7 +18,8 @@ const ProductCard = ({product}) => {
         <View style={styles.innerContainer}>
           <Text style={styles.title}>{product.title} </Text>
           <Text style={styles.price}>{product.price} </Text>
-          <Text style={styles.inStock}>{product.inStock}</Text>
+
+          {!product.inStock && <Text style={styles.inStock}>StoktaYok</Text>}
         </View>
       </View>
     </View>

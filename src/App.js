@@ -14,7 +14,7 @@ const App = () => {
   return (
     <SafeAreaView style={styles.container}>
       <Text style={styles.headerText}>PATIKASTORE</Text>
-      <TextInput style={styles.input} />
+      <TextInput style={styles.input} placeholder="Ara..." />
       <FlatList
         numColumns={2}
         data={storeData}
@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#eceff1',
     marginHorizontal: 5,
     borderRadius: 5,
+    marginBottom: 5,
   },
 });
 export default App;

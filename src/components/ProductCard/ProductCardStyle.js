@@ -7,10 +7,11 @@ console.log('Height: ', windowHeight);
 export default StyleSheet.create({
   container: {
     flex: 1,
+    margin: 2,
   },
   cardContainer: {
-    padding: 5,
-    margin: 5,
+    padding: 4,
+    margin: 4,
     backgroundColor: '#eceff1',
     borderRadius: 10,
   },
@@ -30,8 +31,16 @@ export default StyleSheet.create({
   },
   title: {
     fontWeight: 'bold',
-    fontSize: 10,
+    fontSize: 20,
   },
-  price: {},
-  inStock: {},
+  price: {
+    color: 'gray',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  inStock: {
+    color: 'red',
+    fontWeight: 'bold',
+    marginTop: 5,
+  },
 });
